@@ -1,12 +1,12 @@
 html
-	head
-		title!= title
-	body
-		h1!= message
-		p !{json}
+    head
+        title!= title
+    body
+        h1!= message
+        p !{json}
 
-		//each hit in hits
-		//	div= hit.title
-		p ---
-			each val, key in json
-				p #{key}: #{val}
+        //each hit in hits
+        //	div= hit.title
+        //p ---
+        //	each val, key in json
+        //		p #{key}: #{val}
