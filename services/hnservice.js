@@ -3,7 +3,7 @@ var hn = require('hacker-news-api');
 
 var hnservice = function() {
     this.topStories = [];
-}
+};
 
 hnservice.prototype = Object.create(EventEmitter.prototype);
 hnservice.prototype.constructor = hnservice();
@@ -13,6 +13,6 @@ hnservice.prototype.fetchLatestTopStories = function() {
         this.topStories = data["hits"];
         this.emit('updated');
     }.bind(this))
-}
+};
 
 module.exports = new hnservice();
