@@ -1,0 +1,29 @@
+{
+  "name": "mission1Scott",
+  "version": "1.0.0",
+  "description": "Express & Node & API",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.2",
+    "express-handlebars": "^1.2.2",
+    "hacker-news-api": "^2.0.0",
+    "morgan": "^1.5.1",
+    "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yutodoi/mission1Scott.git"
+  },
+  "author": "Yuto Doi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yutodoi/mission1Scott/issues"
+  },
+  "homepage": "https://github.com/yutodoi/mission1Scott"
+}

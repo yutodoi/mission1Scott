@@ -4,18 +4,15 @@ var nytservice = require('../services/nytservice');
 
 /* Title */
 router.get('/', function(req, res, next) {
-    nytservice.once('updated', function() {
-        res.send(nytservice.topStories);
-        //res.render('nytimes',
-        //    {
-        //        title: 'NYTimes Top10',
-        //        results: nytservice.topStories
-        //    },
-        //    function(err, html) {
-        //        if(err) throw err;
-        //});
+    nytservice.once('updated', function () {
+        res.render('nytimes',
+            {
+                title: 'NYTimes Top10 Stories',
+                results: nytservice.topStories
+            });
     });
     nytservice.fetchLatestPopularArticle();
 });
+
 
 module.exports = router;

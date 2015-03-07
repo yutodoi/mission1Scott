@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<div>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>URL</th>
+        </tr>
+        {{#each results}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.author}}</td>
+                <td>{{this.url}}</td>
+            </tr>
+        {{/each}}
+
+    </table>
+</div>
